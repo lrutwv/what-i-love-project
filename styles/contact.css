@@ -125,7 +125,7 @@
     font-size: 1rem;
 }
 .guestbook-form textarea{
-    width: 400px;
+    width: 370px;
     min-height: 120px;
     resize: vertical;
 }

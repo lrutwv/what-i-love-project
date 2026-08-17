@@ -1,7 +1,11 @@
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{ margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.body{
+    font-family: 'Quicksand', sans-serif;
 }
 @keyframes cloud-left-move {
     0% {
@@ -155,21 +159,27 @@
     left: -150px
 }
 .welcome h2{
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 3px;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
-.hello{
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+.welcome p {
+    font-family: 'Press Start 2P', cursive;
 }
+.hello{
+    font-size: 0.6rem;
+    line-height: 1.8;
+    margin-top: 45px;
+}
+
+
 .intro{
     max-width: 550px;
     margin: 20px auto 0;
+    margin-top: 50px;
     line-height: 1.7;
-    font-size: 0.95rem;
+    font-size: 0.55rem;
 }
 
 .home-links{
