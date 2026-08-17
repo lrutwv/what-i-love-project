@@ -257,7 +257,11 @@
     position: relative;
     z-index: 2;
 }
-
+.test-section p{
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.7;
+    font-size: 0.55rem;
+}
 
 
 /* =========================
