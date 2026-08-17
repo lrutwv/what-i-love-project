@@ -139,6 +139,8 @@
     text-align: center;
     margin: 80px auto 40px;
     margin-top: 170px;
+    background-image: url(../images/image.png);
+    background-size: 610px;
     background-color: white;
     padding: 30px;
     border: 20px solid transparent;
