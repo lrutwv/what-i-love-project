@@ -47,6 +47,7 @@
 }
 .sidebar a:hover{
     background-color: white;
+    transform: rotate(6deg);
 }
 .content{
     background-image: url(../images/back.jfif);
