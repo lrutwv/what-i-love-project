@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes cloud-left-move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes cloud-right-move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes sun-rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes door-float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.website{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+.sidebar {
+    background-image: url(../images/download__12_-removebg-preview.png);
+    background-size: 20px;
+    background-color: rgb(203, 227, 235);
+    padding: 20px;
+    min-height: 100%;
+}
+
+.sidebar h1{
+    margin-bottom: 30px;
+}
+
+.sidebar nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover{
+    background-color: white;
+}
+
+.content{
+   background-image: url('../images/782781978962349443.jfif');
+    background-size: 100px;
+    background-color: lightblue;
+    padding: 30px;
+    background-repeat: repeat;
+
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sun{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 200px;
+
+    animation: sun-rotate 15s linear infinite;
+}
+.clouds{
+    position:absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.cloud{
+    position: absolute;
+    width: 300px;
+    opacity: 0.9;
+}
+.cloud-left{
+    left:-80px;
+    top:200px;
+    animation: cloud-left-move 20s ease-in-out infinite;
+}
+.cloud-right {
+    right: -80px;
+    top: 350px;
+    animation: cloud-right-move 20s ease-in-out infinite;
+}
+.welcome{
+    text-align: center;
+    margin: 80px auto 40px;
+    margin-top: 170px;
+    background-color: white;
+    padding: 30px;
+    border: 20px solid transparent;
+    border-image-source: url("../images/Klostermühle\ Siebenborn\ in\ Maring-Noviand.jfif");
+    border-image-slice: 100;
+    border-image-repeat: round ;
+    border-radius: 15px;
+    max-width: 700px;
+
+    position: relative;
+    z-index: 2;
+}
+.welcome-star{
+    position: absolute;
+    width: 300px;
+    z-index: 5;
+    top: -150px;
+    left: -150px
+}
+.welcome h2{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.hello{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.intro{
+    max-width: 550px;
+    margin: 20px auto 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.home-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 3;
+}
+.door{
+    margin-top: 0px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+.home-links .door{
+    animation: door-float 6s ease-in-out infinite;
+}
+
+.door img{
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+.door span{
+    margin-top: 0px;
+    color:white;
+}
+.door:hover span{
+    text-decoration: underline;
+    color: white;
+}
+.open-door{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+}
+
+.door:hover img {
+    transform: scale(1.08);
+}
+.door:active .closed-door{
+    opacity: 0;
+}
+.door:active .open-door{
+    opacity: 1;
+}
+
+.test-section {
+    width: 700px;
+    max-width: 90%;
+    margin-top: 300px;
+    padding: 40px;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}

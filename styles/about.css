@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.website{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-image: url(../images/download__12_-removebg-preview.png);
+    background-size: 20px;
+    background-color: rgb(203, 227, 235);
+    padding: 20px;
+}
+.sidebar h1{
+    margin-bottom: 30px;
+}
+.sidebar nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background-color: white;
+}
+.content{
+    background-image: url('../images/782781978962349443.jfif');
+    background-size: 100px;
+    background-color: lightblue;
+    padding: 30px;
+    min-height: 100vh;
+}
+.about-header{
+    text-align: center;
+    margin: 50px auto 40px
+}
+.about-header h2{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    color: white;
+}
+.about-header p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.interest{
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.about-me {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border: 20px solid transparent;
+    border-image-source: url("../images/download\ \(23\).jfif");
+    border-image-slice: 100;
+    border-image-repeat: round ;
+    border-radius: 15px;
+}
+.little-things,
+.someday,
+.art,
+.camera,
+.stories,
+.random{ 
+    max-width: 400px;
+    margin: 0;
+    padding: 25px;
+    background-color: white;
+    border: 20px solid transparent;
+    border-image-source: url("../images/Klostermühle\ Siebenborn\ in\ Maring-Noviand.jfif");
+    border-image-slice: 100;
+    border-image-repeat: round ;
+    border-radius: 15px;
+}
+.camera{
+   transform: translateY(200px);
+}
+.stories{
+    transform: translateY(-100px);
+}
+.random{
+    transform: translateY(200px);
+}
+
+.about-me h2
+{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.about-me h3,
+.art h3,
+.camera h3,
+.stories h3,
+.random h3,
+.little-things h3,
+.someday h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.about-me p,
+.little-things p,
+.someday p,
+.art p,
+.camera p,
+.stories p,
+.random p{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.little-things
+{
+    padding: 25px;
+    margin-left: 10%;
+    margin-top: 60px;
+}
+.someday{
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 30px;
+
+
+}
+.little-things ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px 20px;
+}
+.little-things li{
+    padding: 5px 10px;
+}
+.someday ol{
+    padding-left: 25px;
+    margin-top: 20px;
+}
+.someday li{
+    margin-bottom: 10px;
+}

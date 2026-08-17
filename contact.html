@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook - My Little Corner</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <div class="website">
+        <aside class="sidebar">
+            <h1>My Little Corner</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Guestbook</a>
+            </nav>
+        </aside>
+        <main class="content">
+            <header class="guestbook-header">
+               <h1>✦  Sign My Guestbook ✦</h1>
+               <p>Leave a little note before you go :)</p>
+            </header>
+            <div class="guestbook-area">
+                <section class="voicemail">
+                    <img src="images/phone.png" alt="wired phone" class="old-phone">
+                    <h3>☎ Voicemail</h3>
+                    <p class="voicemail-instruction">
+                        Leave a voice message after the beep..
+                    </p>
+                    <div class="voice-recorder">
+                         <button>▶</button>
+                         <button>⏺</button>
+                         <button>■</button>
+                    </div>
+                    <div class="favorite-voicemails">
+                        <h3>✦ Favorite Voicemails ✦</h3>
+                        <div class="voice-note">
+                           <p>"Hello! I found your little corner!"</p>
+                           <span>— someone passing by</span>
+                        </div>
+           
+                        <div class="voice-note">
+                           <p>"I really like this place ><"</p>
+                           <span>— another visitor</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="message-side" id="message">
+                    <div class="guestbook-form">
+                       <h3> Leave a Note...</h3>
+                       <form>
+                          <label for="name">Name</label>
+                           <input type="text" id="name">
+                           <label for="favorite">Something you like</label>
+                            <input type="text" id="favorite" name="favorite">
+                            <label for="message">Message</label>
+                          <textarea id="message" name="message"></textarea>
+                          <div class ="buttons">
+                              <button type="submit">✦ Post Message ✦</button>
+                              <button type="reset">Reset</button>
+                         </div>
+                       </form> 
+                       <div class="visitor-notes">
+                          <h3>✦ Visitors Notes ✦</h3>
+                          <div class="note">
+                              <p> Hello! I found your little corner :)</p>
+                              <span>-someone passing by</span>
+                           </div>
+                            <div class="note">
+                                  <p>This place is awsome!</p>
+                                  <span>-another visitor</span>
+                            </div>
+                        </div>
+                     </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
