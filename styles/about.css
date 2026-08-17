@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -144,7 +146,6 @@
     margin: 0 auto 50px;
     padding: 30px;
     background-color: white;
-    border: 2px solid black;
     border: 20px solid transparent;
     border-image-source: url("../images/download\ \(23\).jfif");
     border-image-slice: 100;
@@ -216,8 +217,11 @@
 .camera p,
 .stories p,
 .random p{
+    font-family: 'Press Start 2P', cursive;
     line-height: 1.7;
     margin-bottom: 15px;
+    font-size: 0.56rem;
+
 }
 .little-things
 {
@@ -233,7 +237,10 @@
     border-radius: 15px;
     overflow: hidden;
     margin-left: 10%;
-    margin-top: 60px;
+    margin-top: 90px;
+}
+.little-things p {
+    text-align: center;
 }
 .someday{
     margin-left: auto;
@@ -250,7 +257,10 @@
 
     background-color: white;
 
-    border: 2px solid black;
+   border: 20px solid transparent;
+    border-image-source: url("../images/download\ \(23\).jfif");
+    border-image-slice: 100;
+    border-image-repeat: round ;
     border-radius: 15px;
 
     overflow: hidden;
@@ -297,7 +307,7 @@
 .little-com {
     width: 100px;
     right: 230px;
-    bottom: 110px;
+    bottom: 90px;
       animation: computer-float 3.5s linear infinite;
 }
 
