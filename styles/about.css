@@ -89,21 +89,43 @@
     background-image: url(../images/download__12_-removebg-preview.png);
     background-size: 20px;
     background-color: rgb(203, 227, 235);
-    padding: 20px;
 }
 .sidebar h1{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
 }
 .sidebar nav{
     display: flex;
     flex-direction: column;
-    gap: 15px
+    gap: 15px;
+    padding: 20px;
 }
 .sidebar a {
     text-decoration: none;
     color: black;
     padding: 8px;
     border-radius: 8px;
+
+}
+
+
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1px;
+    margin-top: 1000px;
+
+}
+.button h2{
+    padding: 20px;
+}
+.move {
+    
+    width: 150px;
+}
+.m {
+    width: 150px
 }
 
 .sidebar a:hover {
