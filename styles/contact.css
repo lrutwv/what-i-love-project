@@ -90,6 +90,7 @@
 }
 .message-side{
     position: relative;
+    transform: translateY(-60px);
 }
 .guestbook-form{
     width: 500px;
