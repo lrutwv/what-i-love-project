@@ -3,6 +3,79 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes ball-diagonal {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(300px, 200px) ;
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes boat-sail {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes moon-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes camera-wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    40% {
+        transform: rotate(8deg);
+    }
+
+    60% {
+        transform: rotate(-6deg);
+    }
+
+    80% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes computer-float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .website{
     display: grid;
@@ -78,7 +151,6 @@
     border-image-repeat: round ;
     border-radius: 15px;
 }
-.little-things,
 .someday,
 .art,
 .camera,
@@ -96,6 +168,14 @@
 }
 .camera{
    transform: translateY(200px);
+   position: relative;
+}
+.camera-decoration{
+    position: absolute;
+    width: 200px;
+    top:-81px;
+    right: -100px;
+    z-index: 5;
 }
 .stories{
     transform: translateY(-100px);
@@ -132,7 +212,17 @@
 }
 .little-things
 {
-    padding: 25px;
+    position: relative;
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+    border: 20px solid transparent;
+    border-image-source: url("../images/Klostermühle\ Siebenborn\ in\ Maring-Noviand.jfif");
+    border-image-slice: 100;
+    border-image-repeat: round ;
+    border-radius: 15px;
+    overflow: hidden;
     margin-left: 10%;
     margin-top: 60px;
 }
@@ -143,13 +233,69 @@
 
 
 }
-.little-things ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap:12px 20px;
+.little-box{
+    position: relative;
+    width: 100%;
+    height: 230px;
+    margin-top: 20px;
+
+    background-color: white;
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+    overflow: hidden;
 }
-.little-things li{
-    padding: 5px 10px;
+.little-box img {
+    position: absolute;
+    object-fit: contain;
+}
+.little-ball {
+    width: 100px;
+    left: 30px;
+    top: 30px;
+    animation: ball-diagonal 9s ease-in-out infinite;
+}
+
+.little-boat {
+    width: 150px;
+    left: 180px;
+    bottom: 30px;
+    animation: boat-sail 30s ease-in-out infinite
+}
+
+.little-moon {
+    width: 150px;
+    right: 40px;
+    top: 0px;
+    animation: moon-rotate 12s linear infinite;
+}
+
+.little-luffy {
+    width: 110px;
+    left: 350px;
+    top: 30px;
+    animation: camera-wiggle 6s ease-in-out infinite;
+}
+
+.little-cam {
+    width: 120px;
+    left: 50px;
+    bottom: 25px;
+    animation: camera-wiggle 1s ease-in-out infinite;
+}
+
+.little-com {
+    width: 100px;
+    right: 230px;
+    bottom: 110px;
+      animation: computer-float 3.5s linear infinite;
+}
+
+.little-cat{
+    width: 100px;
+    right: 200px;
+    bottom: 10px;
 }
 .someday ol{
     padding-left: 25px;
