@@ -150,6 +150,15 @@
     border-image-slice: 100;
     border-image-repeat: round ;
     border-radius: 15px;
+    position: relative;
+}
+.about-decoration{
+    position: absolute;
+    width: 200px;
+    right: -90px;
+    bottom:-100px;
+    z-index: 5;
+
 }
 .someday,
 .art,
