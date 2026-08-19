@@ -449,3 +449,10 @@ body {
 
     flex-shrink: 0;
 }
+
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}

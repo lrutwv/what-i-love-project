@@ -362,3 +362,9 @@
     font-size: 0.56rem;
     margin-bottom: 10px;
 }
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
