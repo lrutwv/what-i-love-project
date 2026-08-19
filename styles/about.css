@@ -127,6 +127,10 @@
 .m {
     width: 150px
 }
+.c{
+    width: 125px;
+    margin-left: 11px;
+}
 
 .sidebar a:hover {
     background-color: white;
