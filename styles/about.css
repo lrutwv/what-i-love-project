@@ -120,7 +120,9 @@
 
 }
 .button h2{
-    padding: 20px;
+    font-size: 1.4rem;
+    padding: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .move {
     
