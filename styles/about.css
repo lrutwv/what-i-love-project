@@ -181,6 +181,7 @@
     border-image-repeat: round ;
     border-radius: 15px;
     position: relative;
+    box-shadow: 0 0 99px rgba(0, 0, 0, 0.8);
 }
 .about-decoration{
     position: absolute;
