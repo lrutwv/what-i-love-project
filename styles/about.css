@@ -93,6 +93,7 @@
 .sidebar h1{
     margin-bottom: 10px;
     padding: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .sidebar nav{
     display: flex;
@@ -105,6 +106,7 @@
     color: black;
     padding: 8px;
     border-radius: 8px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -189,6 +191,7 @@
     right: -90px;
     bottom:-100px;
     z-index: 5;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
 
 }
 .someday,
@@ -217,6 +220,7 @@
     top:-81px;
     right: -100px;
     z-index: 5;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
 }
 .stories{
     transform: translateY(-100px);
