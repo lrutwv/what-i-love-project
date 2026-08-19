@@ -98,7 +98,7 @@
 .guestbook-form{
     width: 500px;
     padding: 30px;
-    background-color: rgba(170, 195, 211, 0.911);;
+    background-color: rgba(170, 195, 211, 0.911);
     border: 20px solid transparent;
     border-image-source: url("../images/jd.jfif");
     border-image-slice: 100;
@@ -120,6 +120,8 @@
     display: flex;
     flex-direction: column;
     gap:10px;
+    background-color: rgba(171, 184, 192, 0.692);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .guestbook-form label{
     margin-top: 10px;
@@ -160,6 +162,7 @@
 .guestbook-form textarea:focus{
     outline: none;
     border: 2px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .visitor-notes{
     width: 100%;
@@ -178,6 +181,7 @@
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .note span{
     display: block;
@@ -216,6 +220,7 @@
     display: flex;
     gap: 12px;
     justify-content: center;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .voice-recorder button{
     width: 45px;
@@ -246,6 +251,7 @@
     border-image-repeat: round ;
     border-radius: 15px;
     text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 .voice-note p{
     margin-bottom: 8px;
