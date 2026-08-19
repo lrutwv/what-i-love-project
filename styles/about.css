@@ -225,6 +225,9 @@
     z-index: 5;
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
 }
+.camera-decoration:hover{
+    transform: rotate(-4deg);
+}
 .stories{
     transform: translateY(-100px);
 }
