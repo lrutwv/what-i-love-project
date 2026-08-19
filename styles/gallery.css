@@ -192,6 +192,7 @@ body {
 
 .random-section {
     grid-area: random;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.8);
 }
 
 .films-section {
@@ -210,16 +211,22 @@ body {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 0;
+
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.8);
 }
 
-
+.anime-section h2{
+    margin-bottom: 18px;
+    text-align: center;
+}
 .anime-item {
 
     width: 115px;
 
     height: 115px;
-    
+     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     overflow: hidden;
+
 }
 
 
@@ -245,6 +252,7 @@ body {
 ========================= */
 .made-section{
     transform: translateY(150px);
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.8);
 }
 .made-items {
 
@@ -297,6 +305,7 @@ body {
     gap: 20px;
 
     align-items: start;
+    
 }
 
 
@@ -411,6 +420,7 @@ body {
     border-image-repeat: round ;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.8);
 }
 
 
